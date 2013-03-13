@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<title>fitness 80 練習</title>
+<link rel="stylesheet" href="SOURCE/style.css">
+
+<script src="SOURCE/jquery.min.js"></script>
+<script type="text/javascript" src="SOURCE/jquery.scrollorama.js"></script>
+<script type="text/javascript" src="SOURCE/jquery.scrollTo.js"></script>
+<script type="text/javascript" src="SOURCE/jquery.localscroll.js"></script>
+
+
+<script>
+$(document).ready(function(){
+
+$('#menu2roll ul').localScroll();
+
+var scrollorama = $.scrollorama({blocks:'.scrollblock', enablePin:'false'});
+
+scrollorama.onBlockChange(function() {
+	var i = scrollorama.blockIndex;
+
+	$('#menu2roll li a').css('backgroundPosition','10px 10px');
+	$('#menu2roll li a').hover(
+		function(){$(this).css('backgroundPosition','-30px 10px')},
+		function(){$(this).css('backgroundPosition','10px 10px')
+	});
+	$('#menu2roll li a').eq(i).css('backgroundPosition','-70px 10px');
+	$('#menu2roll li a').eq(i).hover(
+		function(){$(this).css('backgroundPosition','-30px 10px')},
+		function(){$(this).css('backgroundPosition','-70px 10px')
+	});
+
+});
+
+scrollorama.animate('figcaption span',{duration: 100, property:'opacity', start:0, end:1 });
+//scrollorama.animate('#intro figure',{duration: 600, property:'top', start:0, end:50 });
+$('.idea h1').each(function() {
+	if($.support.opacity)scrollorama.animate($(this),{ duration: 400, property:'opacity', start:0 });
+	scrollorama.animate($(this),{ duration: 300, property:'top', start:500, end:0 });
+});
+/*$('.idea .drawing').each(function() {
+	if($.support.opacity)scrollorama.animate($(this),{ duration: 500, property:'opacity', start:0 });
+	scrollorama.animate($(this),{ duration: 400, property:'top', start:500, end:0 });
+});*/
+
+$('.idea h2').each(function() {
+	if($.support.opacity)scrollorama.animate($(this),{ duration: 500, property:'opacity', start:0 });
+	scrollorama.animate($(this),{ duration: 400, property:'top', start:500, end:0 });
+});
+
+$('.idea p').each(function() {
+	if($.support.opacity)scrollorama.animate($(this),{ duration: 700, property:'opacity', start:0 });
+	scrollorama.animate($(this),{ duration: 600, property:'top', start:500, end:0 });
+});
+
+//$('.pic img').fixPng();
+
+scrollorama.animate('#apple .f100',{delay: 860, duration: 100, property:'opacity', end:0 });
+scrollorama.animate('#apple .f80',{delay: 860, duration: 100, property:'opacity', start:0 });
+
+scrollorama.animate('#rice .f100',{delay: 820, duration: 100, property:'opacity', end:0 });
+//delay ->多久變成下一個大小 duration->多久變成下一個大小 
+scrollorama.animate('#rice .f80',{delay: 820, duration: 100, property:'opacity', start:0 });
+
+scrollorama.animate('#sweet .f100',{delay: 820, duration: 100, property:'opacity', end:0 });
+scrollorama.animate('#sweet .f80',{delay: 820, duration: 100, property:'opacity', start:0 });
+})
+</script>
+</head>
+<body id="fitness80">
+<div id="headerWrap">
+<div id="top">Eat 80%  &nbsp;&nbsp;&nbsp;&nbsp;  讓我們吃的 剛剛好.    /*學習成果用途站。*/</div>
+</div><!-- /#header and #headerWrap -->
+
+
+<nav id="menu2roll">
+	<ul>
+		<li><a href="#top">Top of this page</a></li>
+		<li><a href="#apple">Apple</a></li>
+		<li><a href="#rice">Rice</a></li>
+		<li><a href="#sweet">sweet paper fitness 80</a></li>
+	</ul>
+</nav><!-- /#menu2roll -->
+
+<div class="content">
+
+<div class="scrollblock">
+<section id="intro">
+	<h1 id="logo">吃這麼飽幹嘛<br>吃八分就好</h1>
+	<figure>
+  <img src="SOURCE/cover_photo.png" width="800" height="400" alt="">
+  <figcaption>
+    <span class="caption1">100</span>
+    <span class="caption2">V.S</span>
+    <span class="caption3">80</span>
+  </figcaption>
+  
+  </figure>
+	<div class="lead">
+		<p>
+    餐餐吃太飽，容易造成身體的負擔，思考看看一盤義大利麵的熱量大概有多少，若我們吃的八分剛剛好，對身體也較好，讓我們向無印良品"物的八分目"學習。
+    </p>
+	</div>
+</section><!--#intro-->
+</div>
+
+<div class="scrollblock">
+<section id="apple" class="idea">
+	<div class="desc">
+		<h1>蘋果的分量</h1>
+		<h2>不用吃太大顆，剛好就好。</h2>
+		<p>水果的八分目，不要因為怕浪費就把整顆蘋果吃掉<br/>保存蘋果的方式有很多種<br/>讓我們找到方法吃得更健康<br/>
+	</div>
+	<figure class="pic">
+  <img src="SOURCE/apple.png" width="245" height="286" alt="" class="f100">
+  <img src="SOURCE/apple80.png" width="237" height="278" alt="" class="f80">
+  </figure>
+</section> 
+</div>
+
+<div class="scrollblock">
+<section id="rice" class="idea">
+	<div class="desc">
+		<h1>咖哩飯</h1>
+		<h2>少鹽.少油.少分量</h2>
+		<p>Lorem Ipsum is simply dummy text of the printing and<br>typesetting industry. Lorem Ipsum has been the <br>industry's standard dummy text</p>
+	</div>
+	<figure class="pic">
+  <img src="SOURCE/rice.png" width="569" height="500" alt="" class="f100">
+  <img src="SOURCE/rice80.png" width="569" height="500" alt="" class="f80">
+  </figure>
+</section> <!--#rice-->
+</div>
+
+<div class="scrollblock">
+<section id="sweet" class="idea">
+	<div class="desc">
+		<h1>巧克力的八分目</h1>
+		<h2>小包一點，少負擔一點</h2>
+		<p>Lorem Ipsum is simply dummy text of the printing and<br>typesetting industry. Lorem Ipsum has been the <br>industry's standard dummy text</p>
+	</div><!-- .desc -->
+	<figure class="pic">
+  <img src="SOURCE/sweet.png" width="600" height="335" alt="" class="f100">
+  <img src="SOURCE/sweet80.png" width="600" height="335" alt="" class="f80"></figure>
+</section><!--#sweet-->
+</div>
+
+
+</div><!-- .content -->
+
+
+</body>
+</html>
+
