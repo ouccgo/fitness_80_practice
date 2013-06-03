@@ -1,0 +1,37 @@
+body{margin:0 0 200px 0;font-family:arial,helvetica,clean,sans-serif}
+#top {width: 880px;margin: 0 auto;zoom: 1;line-height:46px;font-size: 12px;}
+#headerWrap{width: 100%;min-width: 910px;height: 46px;background: #B6B6B6;color: #fff;}
+#menu2roll ul{list-style:none;padding: 0px;padding-left: 3px;}
+#menu2roll {background:#fff;border: 1px solid #DDD;border-radius: 15px;position: fixed;right: 350px;top: 200px;margin-top: -89px;z-index: 100;}
+#menu2roll li a {color: transparent; background-image: url("dot.png"); background-repeat: no-repeat; background-position: 10px 10px; width: 15px; height: 15px; display: block; padding: 10px;}
+#menu2roll li:first-child a {background-position: -70px 10px;}
+#menu2roll li a:hover {background-position: -30px 10px;}
+.content {width: auto; padding: 0;}
+.scrollblock {width: 100%; position: relative; padding-top: 10px;}
+p{margin-bottom: 10px; font-size: 14px; line-height: 2em;}
+figure{text-align: center;}
+#intro {padding-top: 50px;}
+#intro figure {position: relative;}
+#intro figcaption span {position: absolute; font-size: 60px; color: rgba(255, 255, 255, 0.80);}
+#intro figcaption .caption1 {top: 159px; left: 166px;}
+#intro figcaption .caption2 {color: #999;top: 190px;left: 443px;font-size: 21px;}
+#intro figcaption .caption3 {top: 162px; left: 645px;}
+#logo,#intro figure,.idea,.lead p {width: 880px; margin: 0 auto;}
+#logo{font-family: "微軟正黑體";font-weight: bold;font-size: 56px;color: #666;}
+#intro figure{margin: 53px auto 73px;height: 400px;}
+.lead {background: #DDDAD5; padding: 20px 0; color: #444;}
+.lead p {margin-bottom: 1em;}
+.idea {min-height: 600px; padding: 50px 0 150px;}
+.idea h1,#information h1 {font-size: 42px; margin-bottom: 50px; font-weight: bold;}
+.idea h2 {font-size: 16px; margin-bottom: 25px; font-weight: bold;}
+.idea p {overflow: hidden;}
+.desc {zoom: 1; margin-bottom: 50px;}
+.desc:after {content: ""; clear: both; display: block;}
+.idea .pic {position: relative; width: 100%; height: 400px; z-index: -1;}
+.idea .pic img {position: absolute; bottom: 0; left: 240px;}
+#apple .pic {height: 400px;}
+#apple .pic img {left: 376px;}
+#rice .pic {height: 500px;}
+#rice .pic img {left: 155px;}
+#sweet .pic {height: 340px;}
+#sweet .pic img {left: 320px;}*/
